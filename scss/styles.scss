@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,400italic,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter", serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.main-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(90deg, rgb(22, 34, 42), rgb(58, 96, 115));
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#vue {
+  margin-top: 20px;
+}
+
+.food-container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 380px;
+  // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  // gap: 20px;
+  // justify-content: center;
+  // padding: 20px;
+}
+
+.grid {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 🔥 IMAGE SIZES */
+.food-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  padding: 10px;
+  max-width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🔥 FORCE IMAGES TO BE SAME SIZE */
+.food-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.food-item h3 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.food-item p {
+  font-size: 14px;
+  color: #666;
+  padding: 5px;
+}
+
+.food-item button {
+  background: #3a6073;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.food-item button:hover {
+  background: #1e3c50;
+}
